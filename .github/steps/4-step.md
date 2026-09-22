@@ -1,40 +1,40 @@
-## Step 4: Fix Security Vulnerabilities
+## Passo 4: Corrigir vulnerabilidades de segurança
 
-Finally, let's use the information provided by CodeQL to better understand the vulnerability and fix it.
+Por fim, vamos usar as informações fornecidas pelo CodeQL para entender melhor a vulnerabilidade e corrigi-la.
 
-### ⌨️ Activity: Resolve an open alert
+### ⌨️ Atividade: Resolver um alerta aberto
 
-1. Review the open alert and become familiar with the recommended changes.
+1. Revise o alerta aberto e familiarize-se com as mudanças recomendadas.
 
-1. In the top navigation, select the **Code** tab.
+1. Na navegação superior, selecione a aba **Code**.
 
-1. Ensure you are on the `main` branch then navigate to the `server` folder and select the `routes.py` file.
+1. Certifique-se de estar na branch `main`, depois navegue até a pasta `server` e selecione o arquivo `routes.py`.
 
-1. In the top right of the preview, click the **Edit** button.
+1. No canto superior direito da pré-visualização, clique no botão **Edit**.
 
-   <img width="500" alt="edit button" src="../images/edit-button.png"/>
+   <img width="500" alt="botão de edição" src="../images/edit-button.png"/>
 
-1. Navigate to about **line 16** and modify it to the below.
+1. Vá até aproximadamente a **linha 16** e altere-a para o conteúdo abaixo.
 
    ```py
    "SELECT * FROM books WHERE name LIKE %s", name
    ```
 
-1. Above the editor in the top-right, click the **Commit changes...** button. Use the defaults options to commit directly to the `main` branch.
-   - CodeQL will now initiate a another scan.
+1. Acima do editor, no canto superior direito, clique no botão **Commit changes...**. Use as opções padrão para fazer o commit diretamente na branch `main`.
+   - O CodeQL iniciará um novo scan.
 
-1. Wait a moment for the **CodeQL** workflow to finish.
+1. Aguarde um momento até o workflow do **CodeQL** terminar.
 
-1. Return to the **Security and quality** tab and **Code Scanning** area.
-   - There should be no open alerts and 1 closed alert. Nice work! 🎉
-   - Feel free to review the closed alerts, especially the audit trail.
+1. Volte para a aba **Security and quality**, na área **Code Scanning**.
+   - Não deve haver nenhum alerta aberto e deve existir 1 alerta fechado. Bom trabalho! 🎉
+   - Fique à vontade para revisar os alertas fechados, especialmente a trilha de auditoria.
 
-1. Click on **Closed** to show our recently resolved alert.
+1. Clique em **Closed** para exibir o alerta que acabamos de resolver.
 
-   <img width="350" alt="image" src="../images/closed-alerts-button.png" />
+   <img width="350" alt="botão de alertas fechados" src="../images/closed-alerts-button.png" />
 
-1. Open our alert and notice the audit trail now includes how the alert was fixed.
+1. Abra o alerta e note que a trilha de auditoria agora inclui como o alerta foi corrigido.
 
-   <img width="350" alt="image" src="../images/audit-trail-fixed-alert.png" />
+   <img width="350" alt="trilha de auditoria do alerta corrigido" src="../images/audit-trail-fixed-alert.png" />
 
-1. With our alert fixed, Mona will check your progress and share a final review. Nice work! You are all done! 🥳
+1. Com o alerta corrigido, a Mona vai verificar seu progresso e compartilhar a revisão final. Bom trabalho! Você concluiu tudo! 🥳

@@ -1,19 +1,19 @@
-## Review
+## Revisão
 
-Great job completing the exercise! You have now:
+Ótimo trabalho concluindo o exercício! Agora você já:
 
-- Enabled Code Scanning with CodeQL in your repository.
-- Introduced and detected a vulnerability using a pull request.
-- Reviewed and triaged CodeQL alerts.
-- Fixed a security vulnerability and verified the alert was resolved.
+- Habilitou o Code Scanning com CodeQL no seu repositório.
+- Introduziu e detectou uma vulnerabilidade usando um pull request.
+- Revisou e triou alertas do CodeQL.
+- Corrigiu uma vulnerabilidade de segurança e verificou que o alerta foi resolvido.
 
-By following these steps, you’ve learned how to use GitHub’s security features to keep your codebase safe. Remember, regularly reviewing and addressing security alerts is an important part of maintaining healthy projects.
+Seguindo esses passos, você aprendeu a usar os recursos de segurança do GitHub para manter sua base de código protegida. Lembre-se: revisar e tratar alertas de segurança com regularidade é parte importante da manutenção de projetos saudáveis.
 
-### What's next?
+### E agora?
 
-- [Take another Skills exercise.](https://github.com/skills).
-- Visit the [CodeQL documentation](https://codeql.github.com/docs/) to learn about about customizing your code scanning.
-- Check out the [code scanning documentation](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning) to learn about connecting 3rd party scanning tools
-- Explore the [CodeQL CLI & VS Code extension](https://codeql.github.com/docs/codeql-cli/) to run and write custom queries locally.
-- Read the [triaging code scanning alerts guide](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests) for best practices on investigating alerts.
-- Learn about [advanced CodeQL query features](https://docs.github.com/en/code-security/codeql-for-vs-code/using-the-advanced-functionality-of-the-codeql-for-vs-code-extension/creating-a-custom-query) to build complex custom analyses.
+- [Faça outro exercício do GitHub Skills.](https://github.com/skills).
+- Acesse a [documentação do CodeQL](https://codeql.github.com/docs/) para aprender a personalizar seu code scanning.
+- Confira a [documentação de code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning) para aprender a conectar ferramentas de scanning de terceiros.
+- Explore o [CodeQL CLI e a extensão para VS Code](https://codeql.github.com/docs/codeql-cli/) para executar e escrever queries customizadas localmente.
+- Leia o [guia de triagem de alertas de code scanning](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests) para conhecer boas práticas de investigação de alertas.
+- Conheça os [recursos avançados de queries do CodeQL](https://docs.github.com/en/code-security/codeql-for-vs-code/using-the-advanced-functionality-of-the-codeql-for-vs-code-extension/creating-a-custom-query) para construir análises customizadas complexas.

@@ -1,50 +1,50 @@
-## Step 1: Enable Code Scanning
+## Passo 1: Habilitar o Code Scanning
 
-Let's start by learning a bit about code scanning with [CodeQL](https://codeql.github.com/) and how it helps secure your code.
+Vamos começar aprendendo um pouco sobre code scanning com [CodeQL](https://codeql.github.com/) e como ele ajuda a proteger seu código.
 
-### What is GitHub Code Scanning?
+### O que é o GitHub Code Scanning?
 
-[Code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning) is part of the [GitHub Advanced Security (GHAS)](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) product suite. It allows development teams to integrate security testing tools directly into the same process you already use for shipping code. It supports many types such as SAST, container, and infrastructure as code. And, the best part is that the results can also live directly in GitHub next to your code. No need for context switching! 🎉
+O [Code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning) faz parte do conjunto de produtos [GitHub Advanced Security (GHAS)](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security). Ele permite que times de desenvolvimento integrem ferramentas de teste de segurança diretamente no mesmo processo que já usam para entregar código. Há suporte a diversos tipos, como SAST, contêineres e infrastructure as code. E o melhor: os resultados ficam diretamente no GitHub, ao lado do seu código. Sem necessidade de trocar de contexto! 🎉
 
 > [!TIP]
-> All features of GitHub Advanced Security are free for public repositories. However, private repositories require a compatible [paid account](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-advanced-security/about-billing-for-github-advanced-security).
+> Todos os recursos do GitHub Advanced Security são gratuitos para repositórios públicos. Já repositórios privados exigem uma [conta paga](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-advanced-security/about-billing-for-github-advanced-security) compatível.
 
-### What is CodeQL?
+### O que é o CodeQL?
 
-[CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql) is a static analysis testing tool that helps you identify security weaknesses such as SQL injection, cross-site scripting, and code injection issues.
+O [CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql) é uma ferramenta de análise estática que ajuda a identificar fragilidades de segurança, como SQL injection, cross-site scripting e problemas de code injection.
 
-Typically CodeQL [queries](https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/) are collected into [query suites](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql#about-codeql-queries) to cover multiple patterns. When combined well, this can be a very powerful! To help with this, teams of security experts have pre-populated suites for many common scenarios and programming languages.
+Normalmente, as [queries](https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/) do CodeQL são reunidas em [query suites](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql#about-codeql-queries) para cobrir múltiplos padrões. Quando bem combinadas, isso pode ser muito poderoso! Para facilitar, times de especialistas em segurança já disponibilizam suites prontas para diversos cenários e linguagens de programação comuns.
 
-In many cases, taking advantage of CodeQL is as simple as accepting the default suite, but you can also select the extended suite or customize your own with [GitHub Actions]().
+Em muitos casos, aproveitar o CodeQL é tão simples quanto aceitar a suite padrão, mas você também pode selecionar a suite estendida ou personalizar a sua própria com [GitHub Actions]().
 
-<img width="250" align="right" alt="codeql default configuration box" src="../images/codeql-default-configuration-box.png"/>
+<img width="250" align="right" alt="caixa de configuração padrão do codeql" src="../images/codeql-default-configuration-box.png"/>
 
-Here are some of the options the default configuration provides:
+Estas são algumas das opções fornecidas pela configuração padrão:
 
-- **Languages:** Supported languages will automatically be detected in your repository and scanning will be enabled.
+- **Languages:** As linguagens suportadas serão detectadas automaticamente no seu repositório e o scanning será habilitado.
 
-- **Query suites:** A list of the available suites of patterns that will be used. The **Default** or **Extended** are provided automatically.
+- **Query suites:** Uma lista das suites de padrões disponíveis que serão utilizadas. As opções **Default** ou **Extended** são fornecidas automaticamente.
 
-- **Runner type:** Type of GitHub Actions runner that will run the CodeQL analysis. This defaults to Standard GitHub Hosted Runners but can be customized to use [self-hosted runners](https://docs.github.com/en/enterprise-cloud@latest/code-security/how-tos/secure-at-scale/configure-enterprise-security/configure-specific-tools/configuring-code-scanning-for-your-appliance).
+- **Runner type:** Tipo de runner do GitHub Actions que executará a análise do CodeQL. O padrão são os Standard GitHub Hosted Runners, mas é possível personalizar para usar [self-hosted runners](https://docs.github.com/en/enterprise-cloud@latest/code-security/how-tos/secure-at-scale/configure-enterprise-security/configure-specific-tools/configuring-code-scanning-for-your-appliance).
 
-- **Events:** Triggers for running a CodeQL scan. It's common to run before merging and on a schedule for production code.
+- **Events:** Gatilhos para executar um scan do CodeQL. É comum executar antes do merge e de forma agendada para código de produção.
 
-### ⌨️ Activity: Enable code scanning with CodeQL
+### ⌨️ Atividade: Habilitar code scanning com CodeQL
 
-1. Open a second tab and navigate to this repository. Ensure you are on the **Code** tab.
+1. Abra uma segunda aba e navegue até este repositório. Certifique-se de estar na aba **Code**.
 
-1. In the top navigation, select the **Settings** tab.
+1. Na navegação superior, selecione a aba **Settings**.
 
-1. In the left navigation, find the **Security** section and select **Advanced Security**.
+1. Na navegação lateral esquerda, encontre a seção **Security** e selecione **Advanced Security**.
 
-1. Scroll down and find the **Code scanning** area.
+1. Role a página para baixo e localize a área **Code scanning**.
 
-1. In the **CodeQL** setting, click the **Set up** dropdown menu and choose **Default**.
+1. Na configuração do **CodeQL**, clique no menu suspenso **Set up** e escolha **Default**.
 
-   <img width="400" alt="enable code scanning" src="../images/enable-code-scanning.png"/>
+   <img width="400" alt="habilitar code scanning" src="../images/enable-code-scanning.png"/>
 
-1. Click **Enable CodeQL**.
+1. Clique em **Enable CodeQL**.
 
-   > 💡 Tip: This will trigger a first run of CodeQL. You can view the progress in the **Actions** tab.
+   > 💡 Dica: Isso vai disparar a primeira execução do CodeQL. Você pode acompanhar o progresso na aba **Actions**.
 
-1. With CodeQL now enabled, Mona will check your progress and share the next steps.
+1. Com o CodeQL habilitado, a Mona vai verificar seu progresso e compartilhar os próximos passos.

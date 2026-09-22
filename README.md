@@ -1,37 +1,37 @@
-# Enable CodeQL to secure your source code
+# Habilite o CodeQL para proteger seu código-fonte
 
-_Learn to identify, resolve, and prevent insecure coding patterns._
+_Aprenda a identificar, resolver e prevenir padrões de codificação inseguros._
 
-## Welcome
+## Boas-vindas
 
-- **Who is this for**: Developers, security engineers, open source maintainers.
-- **What you'll learn**: How to enable code scanning to identify typical vulnerabilities like SQL injection, review alerts, and take action to fix them.
-- **What you'll build**: An automated process to identify existing vulnerabilities and prevent future vulnerabilities in production code.
-- **Prerequisites**:
+- **Para quem é este exercício**: Pessoas desenvolvedoras, engenheiras de segurança e mantenedoras de projetos open source.
+- **O que você vai aprender**: Como habilitar o code scanning para identificar vulnerabilidades comuns, como SQL injection, revisar alertas e agir para corrigi-los.
+- **O que você vai construir**: Um processo automatizado para identificar vulnerabilidades existentes e prevenir novas vulnerabilidades em código de produção.
+- **Pré-requisitos**:
   - [Introduction to GitHub](https://github.com/skills/introduction-to-github)
-- **How long**: Less than 30 minutes.
+- **Duração**: Menos de 30 minutos.
 
-### How to start this exercise
+### Como iniciar este exercício
 
-Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
+Basta copiar o exercício para a sua conta, dar à sua Octocat favorita (Mona) **cerca de 20 segundos** para preparar a primeira lição e depois **atualizar a página**.
 
-[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=introduction-to-codeql&owner=%40me&name=skills-introduction-to-codeql&description=Exercise:+Introduction+to+CodeQL&visibility=public)
+[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=dev-pods&template_name=skills-introduction-to-codeql&owner=%40me&name=skills-introduction-to-codeql&description=Exerc%C3%ADcio:+Introdu%C3%A7%C3%A3o+ao+CodeQL&visibility=public)
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>Está com problemas? 🤷</summary><br/>
 
-When copying the exercise, we recommend the following settings:
+Ao copiar o exercício, recomendamos as seguintes configurações:
 
-- For owner, choose your personal account or an organization to host the repository.
-- We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+- Em owner, escolha sua conta pessoal ou uma organização para hospedar o repositório.
+- Recomendamos criar um repositório público, pois repositórios privados vão [consumir minutos do Actions](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
 
-If the exercise isn't ready in 20 seconds:
+Se o exercício não estiver pronto em 20 segundos:
 
-1. After your new repository is created, wait about 20 seconds, then refresh the page.
-2. Follow the step-by-step instructions in the issue created in your repository.
-3. If the page doesn't refresh automatically, please check the [Actions](../../actions) tab.
-   - Check to see if a job is running. Sometimes it simply takes a bit longer.
-   - If the page shows a failed job, please submit an issue. Nice, you found a bug! 🐛
+1. Depois que o novo repositório for criado, aguarde cerca de 20 segundos e atualize a página.
+2. Siga as instruções passo a passo na issue criada no seu repositório.
+3. Se a página não atualizar automaticamente, verifique a aba [Actions](../../actions).
+   - Veja se há um job em execução. Às vezes simplesmente demora um pouco mais.
+   - Se a página mostrar um job com falha, por favor abra uma issue. Muito bem, você encontrou um bug! 🐛
 
 </details>
 
